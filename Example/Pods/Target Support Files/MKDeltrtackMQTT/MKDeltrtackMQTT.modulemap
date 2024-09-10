@@ -1,0 +1,6 @@
+framework module MKDeltrtackMQTT {
+  umbrella header "MKDeltrtackMQTT-umbrella.h"
+
+  export *
+  module * { export * }
+}

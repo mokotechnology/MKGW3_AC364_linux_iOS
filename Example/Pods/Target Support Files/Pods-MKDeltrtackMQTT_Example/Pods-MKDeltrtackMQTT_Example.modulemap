@@ -1,0 +1,6 @@
+framework module Pods_MKDeltrtackMQTT_Example {
+  umbrella header "Pods-MKDeltrtackMQTT_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
