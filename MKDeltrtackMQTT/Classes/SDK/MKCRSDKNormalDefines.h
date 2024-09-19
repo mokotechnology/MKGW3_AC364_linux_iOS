@@ -14,7 +14,6 @@ typedef NS_ENUM(NSInteger, mk_cr_centralManagerStatus) {
 
 typedef NS_ENUM(NSInteger, mk_cr_connectMode) {
     mk_cr_connectMode_TCP,                                          //TCP
-    mk_cr_connectMode_CASignedServerCertificate,                    //SSL.Do not verify the server certificate.
     mk_cr_connectMode_CACertificate,                                //SSL.Verify the server's certificate
     mk_cr_connectMode_SelfSignedCertificates,                       //SSL.Two-way authentication
 };

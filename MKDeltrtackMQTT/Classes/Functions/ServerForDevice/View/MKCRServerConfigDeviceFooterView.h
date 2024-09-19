@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign)BOOL sslIsOn;
 
-///  0:CA signed server certificate     1:CA certificate     2:Self signed certificates
+/// 0:CA certificate     1:Self signed certificates
 @property (nonatomic, assign)NSInteger certificate;
 
 @property (nonatomic, copy)NSString *caFileName;

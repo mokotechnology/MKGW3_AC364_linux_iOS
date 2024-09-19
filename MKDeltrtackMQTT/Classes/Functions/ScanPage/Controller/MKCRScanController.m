@@ -214,9 +214,9 @@ MKCRTabBarControllerDelegate>
     [[MKCRCentralManager shared] startScan];
     self.scanTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0,dispatch_get_global_queue(0, 0));
     //开始时间
-    dispatch_time_t start = dispatch_time(DISPATCH_TIME_NOW, 60 * NSEC_PER_SEC);
+    dispatch_time_t start = dispatch_time(DISPATCH_TIME_NOW, 30 * NSEC_PER_SEC);
     //间隔时间
-    uint64_t interval = 60 * NSEC_PER_SEC;
+    uint64_t interval = 30 * NSEC_PER_SEC;
     dispatch_source_set_timer(self.scanTimer, start, interval, 0);
     @weakify(self);
     dispatch_source_set_event_handler(self.scanTimer, ^{

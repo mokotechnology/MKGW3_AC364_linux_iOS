@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign)BOOL sslIsOn;
 
-/// 0:CA signed server certificate     1:CA certificate     2:Self signed certificates
+/// 0:CA certificate     1:Self signed certificates
 @property (nonatomic, assign)NSInteger certificate;
 
 @property (nonatomic, copy)NSString *caFileName;
@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)cr_mqtt_sslParams_device_sslStatusChanged:(BOOL)isOn;
 
 /// 用户选择了加密方式
-/// @param certificate 0:CA signed server certificate     1:CA certificate     2:Self signed certificates
+/// @param certificate 0:CA certificate     1:Self signed certificates
 - (void)cr_mqtt_sslParams_device_certificateChanged:(NSInteger)certificate;
 
 /// 用户点击选择了caFaile按钮

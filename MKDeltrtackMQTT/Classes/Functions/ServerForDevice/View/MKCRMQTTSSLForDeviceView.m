@@ -150,7 +150,7 @@
 }
 
 - (void)certificateButtonPressed {
-    NSArray *dataList = @[@"CA signed server certificate",@"CA certificate",@"Self signed certificates"];
+    NSArray *dataList = @[@"CA certificate",@"Self signed certificates"];
     NSInteger index = 0;
     for (NSInteger i = 0; i < dataList.count; i ++) {
         if ([self.certificateButton.titleLabel.text isEqualToString:dataList[i]]) {
@@ -177,7 +177,7 @@
     }
     self.sslButton.selected = _dataModel.sslIsOn;
     [self updateSSLButtonIcon];
-    NSArray *dataList = @[@"CA signed server certificate",@"CA certificate",@"Self signed certificates"];
+    NSArray *dataList = @[@"CA certificate",@"Self signed certificates"];
     [self.certificateButton setTitle:dataList[_dataModel.certificate] forState:UIControlStateNormal];
     [self updateCertificateView:_dataModel.certificate];
     
@@ -210,13 +210,6 @@
 
 - (void)updateCertificateView:(NSInteger)certificate {
     if (certificate == 0) {
-        //隐藏下面的证书相关
-        self.caFileView.hidden = YES;
-        self.clientCertView.hidden = YES;
-        self.clientKeyView.hidden = YES;
-        return;
-    }
-    if (certificate == 1) {
         //只保留CA证书
         self.caFileView.hidden = NO;
         self.clientCertView.hidden = YES;
@@ -272,7 +265,7 @@
 
 - (UIButton *)certificateButton {
     if (!_certificateButton) {
-        _certificateButton = [MKCustomUIAdopter customButtonWithTitle:@"CA signed server certificate"
+        _certificateButton = [MKCustomUIAdopter customButtonWithTitle:@"CA certificate"
                                                                target:self
                                                                action:@selector(certificateButtonPressed)];
         [_certificateButton.titleLabel setFont:MKFont(13.f)];

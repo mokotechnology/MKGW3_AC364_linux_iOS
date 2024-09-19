@@ -720,8 +720,6 @@ static NSString *const defaultPubTopic = @"{device_name}/{device_id}/device_to_a
             self.certificate = 0;
         }else if (value == 2) {
             self.certificate = 1;
-        }else if (value == 3) {
-            self.certificate = 2;
         }
         dispatch_semaphore_signal(self.semaphore);
     } failedBlock:^(NSError * _Nonnull error) {
@@ -736,10 +734,8 @@ static NSString *const defaultPubTopic = @"{device_name}/{device_id}/device_to_a
     mk_cr_connectMode mode = mk_cr_connectMode_TCP;
     if (self.sslIsOn) {
         if (self.certificate == 0) {
-            mode = mk_cr_connectMode_CASignedServerCertificate;
-        }else if (self.certificate == 1) {
             mode = mk_cr_connectMode_CACertificate;
-        }else if (self.certificate == 2) {
+        }else if (self.certificate == 1) {
             mode = mk_cr_connectMode_SelfSignedCertificates;
         }
     }

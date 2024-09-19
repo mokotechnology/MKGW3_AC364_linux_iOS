@@ -309,7 +309,7 @@ MKCRMQTTTopicsCellDelegate>
 }
 
 /// 用户选择了加密方式
-/// @param certificate 0:CA signed server certificate     1:CA certificate     2:Self signed certificates
+/// @param certificate 0:CA certificate     1:Self signed certificates
 - (void)cr_mqtt_serverForDevice_certificateChanged:(NSInteger)certificate {
     self.dataModel.certificate = certificate;
     self.sslParamsModel.certificate = certificate;

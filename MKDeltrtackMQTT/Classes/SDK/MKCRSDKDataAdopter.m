@@ -17,12 +17,10 @@
     switch (mode) {
         case mk_cr_connectMode_TCP:
             return @"00";
-        case mk_cr_connectMode_CASignedServerCertificate:
-            return @"01";
         case mk_cr_connectMode_CACertificate:
-            return @"02";
+            return @"01";
         case mk_cr_connectMode_SelfSignedCertificates:
-            return @"03";
+            return @"02";
     }
 }
 
