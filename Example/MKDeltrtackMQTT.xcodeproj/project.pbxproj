@@ -459,6 +459,7 @@
 			baseConfigurationReference = 1E4A28F0E5919259D9B20425 /* Pods-MKDeltrtackMQTT_Example.adhoc.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 2024091901;
 				DEVELOPMENT_TEAM = R558LEUW2T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MKDeltrtackMQTT/MKDeltrtackMQTT-Prefix.pch";
@@ -574,6 +575,7 @@
 			baseConfigurationReference = 1EBDAC68DDF12052B2E7A58E /* Pods-MKDeltrtackMQTT_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 2024091901;
 				DEVELOPMENT_TEAM = R558LEUW2T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MKDeltrtackMQTT/MKDeltrtackMQTT-Prefix.pch";
@@ -592,6 +594,7 @@
 			baseConfigurationReference = 5A1F4BD6B918768A583C2E0B /* Pods-MKDeltrtackMQTT_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 2024091901;
 				DEVELOPMENT_TEAM = R558LEUW2T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MKDeltrtackMQTT/MKDeltrtackMQTT-Prefix.pch";
